@@ -3,17 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+#table {
+  font: 100% sans-serif;
+/*   background-color: #efe; */
+  border-collapse: collapse;
+  empty-cells: show;
+  border: 1px solid #7a7;
+}
+#table th {
+  text-align: left;
+}
+</style>
 </head>
 <body>
 
 <form action="Join" method="post">
-	<table border="1" cellpadding="0" cellspacing="0" width="400" >
+	<table id="table" border="1" cellpadding="0" cellspacing="0" width="400" >
 		<tr>
-			<td >이름</td>
+			<th >이름</th>
 			<td><input name="name"></td>
 		</tr>
 		<tr>
-			<td>성별</td>
+			<th>성별</th>
 			<td>
 				<select name="gender">
 					<option value="male">남자</option>
@@ -22,31 +34,31 @@
 			</td>
 		</tr>	
 		<tr>
-			<td>아이디</td>
+			<th>아이디</th>
 			<td><input name="id"></td>
 		</tr>	
 		<tr>
-			<td>비밀번호</td>
+			<th>비밀번호</th>
 			<td><input type="password" name="pwd"></td>
 		</tr>	
 		<tr>
-			<td>비밀번호 확인</td>
+			<th>비밀번호 확인</th>
 			<td><input type="password" name="comfirm"></td>
 		</tr>	
 		<tr>
-			<td>주소</td>
+			<th>주소</th>
 			<td><input name="address"></td>
 		</tr>	
 		<tr>
-			<td>전화번호</td>
+			<th>전화번호</th>
 			<td><input name="telNumber"></td>
 		</tr>	
 		<tr>
-			<td>이메일주소</td>
+			<th>이메일주소</th>
 			<td><input name="eMail"></td>
 		</tr>	
 		<tr>
-			<td>취미</td>
+			<th>취미</th>
 			<td>
 				<input name="hobby" type="checkbox" value="soccer">축구
 				<input name="hobby" type="checkbox" value="baseball">야구
